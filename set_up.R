@@ -49,3 +49,5 @@ removed <- anti_join(temp, validation)
 edx <- rbind(edx, removed)
 
 rm(dl, ratings, movies, test_index, temp, movielens, removed)
+
+save.image("~/edx_and_validation.RData")
